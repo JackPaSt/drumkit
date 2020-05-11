@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body {
+    background-image: url('img/concert_crowd.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: 50%;
+}
+.drum {
+    width: 11%;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+    transition: border-style .1s, border-color .1s, border-width .1s, border-radius .1s;
+    border-style: solid;
+    border-color: #a8a8a8;
+    border-width: 2px;
+    border-radius: 3px;
+}
+.drum.active, .drum:active {
+    border-style: solid;
+    border-color: #b50b3b;
+    border-width: 5px;
+    border-radius: 3px;
+}
+.drum > p {
+    font-weight: normal;
+    font-size: 1rem;
+}
